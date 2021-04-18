@@ -1,0 +1,75 @@
+html {
+  overflow-y: scroll;
+}
+
+.mainNavigation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 6.5rem;
+  background:white;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid gray;
+  z-index: 2;
+}
+
+.fa-canadian-maple-leaf {
+  margin-left: 0.5rem;
+}
+  
+.mainNavigation__logo {
+  display: flex;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  align-items: center;
+}
+.mainNavigation__logo h1 {
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
+}
+.mainNavigation a,
+.mainNavigation a.active {
+  text-decoration: none;
+  color: inherit;
+}
+  
+.mainNavigation__items {
+  margin-right: 3rem;
+}
+  
+.mainNavigation__items ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+  
+.mainNavigation__items li {
+  margin: 0 2.5rem;
+}
+  
+.mainNavigation__items a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-family: sans-serif;
+  color: #67785F;
+}
+  
+.mainNavigation__items a:hover,
+.mainNavigation__items a:active {
+  color:#212121;
+}
+
+.mainNavigation__items a.active {
+  color:#212121;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 0.15rem;
+}
