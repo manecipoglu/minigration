@@ -23,6 +23,7 @@ export default function WorkExperience() {
             id="q6i" 
             name="q6i" 
             className="form-control mrgn-bttm-md"
+            value={test.canadianWorkExperience}
             onChange={e => setTest(state => ({
               ...state, 
               canadianWorkExperience: e.target.value
@@ -30,12 +31,12 @@ export default function WorkExperience() {
             ))}
           >
             <option value="badvalue" label="Select...">Select...</option>
-            <option selected={test.canadianWorkExperience === "A"} value="A">None or less than a year</option>
-            <option selected={test.canadianWorkExperience === "B"} value="B">1 year</option>
-            <option selected={test.canadianWorkExperience === "C"} value="C">2 years</option>
-            <option selected={test.canadianWorkExperience === "D"} value="D">3 years</option>
-            <option selected={test.canadianWorkExperience === "E"} value="E">4 years</option>
-            <option selected={test.canadianWorkExperience === "F"} value="F">5 years or more</option>
+            <option value="A">None or less than a year</option>
+            <option value="B">1 year</option>
+            <option value="C">2 years</option>
+            <option value="D">3 years</option>
+            <option value="E">4 years</option>
+            <option value="F">5 years or more</option>
           </select>
         </div>
         {test.canadianWorkExperience && 
@@ -46,16 +47,17 @@ export default function WorkExperience() {
               id="q6ii" 
               name="q6ii" 
               className="form-control mrgn-bttm-md"
+              value={test.foreignWorkExperience}
               onChange={e => setTest(state => ({
               ...state, 
               foreignWorkExperience: e.target.value
               }
             ))}>
               <option value="badvalue" label="Select...">Select...</option>
-              <option selected={test.foreignWorkExperience === "A"} value="A">None or less than a year</option>
-              <option selected={test.foreignWorkExperience === "B"} value="B">1 year</option>
-              <option selected={test.foreignWorkExperience === "C"} value="C">2 years</option>
-              <option selected={test.foreignWorkExperience === "D"} value="D">3 years or more</option>
+              <option value="A">None or less than a year</option>
+              <option value="B">1 year</option>
+              <option value="C">2 years</option>
+              <option value="D">3 years or more</option>
             </select>
           </div>
         }

@@ -26,6 +26,7 @@ export default function JobOffer() {
           id="q8" 
           name="q8" 
           className="form-control mrgn-bttm-md"
+          value={test.jobOffer.jobOffer}
           onChange={e => setTest(state => ({
             ...state, 
             jobOffer: {
@@ -35,8 +36,8 @@ export default function JobOffer() {
           }
           ))}>
           <option value="badvalue" label="Select...">Select...</option>
-          <option selected={test.jobOffer.jobOffer === "A"} value="A">No</option>
-          <option selected={test.jobOffer.jobOffer === "B"} value="B">Yes</option>
+          <option value="A">No</option>
+          <option value="B">Yes</option>
         </select>
       </div>
       {test.jobOffer.jobOffer === "B" && 
@@ -47,6 +48,7 @@ export default function JobOffer() {
             id="q8a" 
             name="q8a" 
             className="form-control mrgn-bttm-md"
+            value={test.jobOffer.jobNOC}
             onChange={e => setTest(state => ({
             ...state, 
             jobOffer: {
@@ -56,9 +58,9 @@ export default function JobOffer() {
           }
           ))}>
             <option value="badvalue" label="Select...">Select...</option>
-            <option selected={test.jobOffer.jobNOC === "A"} value="A">NOC Skill Type 00</option>
-            <option selected={test.jobOffer.jobNOC === "B"} value="B">NOC Skill Level A or B or  any Type 0 other than 00</option>
-            <option selected={test.jobOffer.jobNOC === "C"} value="C">NOC Skill Level C or D</option>
+            <option value="A">NOC Skill Type 00</option>
+            <option value="B">NOC Skill Level A or B or  any Type 0 other than 00</option>
+            <option value="C">NOC Skill Level C or D</option>
           </select>
         </div>
       }

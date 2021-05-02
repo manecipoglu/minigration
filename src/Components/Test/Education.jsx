@@ -19,6 +19,7 @@ export default function Education() {
           id="q4" 
           name="q4" 
           className="form-control mrgn-bttm-md" 
+          value={test.education.education}
           onChange={e => setTest(state => ({
             ...state, 
             education: {
@@ -27,14 +28,14 @@ export default function Education() {
             }
           }))}>
           <option value="badvalue" label="Select...">Select...</option>
-          <option selected={test.education.education === "A"} value="A">None, or less than secondary (High School)</option>
-          <option selected={test.education.education === "B"} value="B">Secondary Diploma (High School Graduation)</option>
-          <option selected={test.education.education === "C"} value="C">One-year program at a university, college, trade or technical school or other institution</option>
-          <option selected={test.education.education === "D"} value="D">Two-year program at a university, college, trade or technical school or other institution</option>
-          <option selected={test.education.education === "E"} value="E">Bachelor's Degree (Three or more year program at a university, college, trade or technical school or other institution</option>
-          <option selected={test.education.education === "F"} value="F">Two or more certificates, diplomas or degrees. One must be for a program of three or more years</option>
-          <option selected={test.education.education === "G"} value="G">Masters's Degree, or professional degree needed to practice in a licensed profession</option>
-          <option selected={test.education.education === "H"} value="H">Doctoral level university degree (PhD)</option>
+          <option value="A">None, or less than secondary (High School)</option>
+          <option value="B">Secondary Diploma (High School Graduation)</option>
+          <option value="C">One-year program at a university, college, trade or technical school or other institution</option>
+          <option value="D">Two-year program at a university, college, trade or technical school or other institution</option>
+          <option value="E">Bachelor's Degree (Three or more year program at a university, college, trade or technical school or other institution</option>
+          <option value="F">Two or more certificates, diplomas or degrees. One must be for a program of three or more years</option>
+          <option value="G">Masters's Degree, or professional degree needed to practice in a licensed profession</option>
+          <option value="H">Doctoral level university degree (PhD)</option>
         </select>
       </div>
       {test.education.education &&
@@ -52,6 +53,7 @@ export default function Education() {
               id="q4b" 
               name="q4b" 
               className="form-control mrgn-bttm-md" 
+              value={test.education.cadDegree}
               onChange={e => setTest(state => ({
                 ...state, 
                 education: {
@@ -71,6 +73,7 @@ export default function Education() {
                 id="q4c" 
                 name="q4c" 
                 className="form-control mrgn-bttm-md" 
+                value={test.education.levelCadDegree}
                 onChange={e => setTest(state => ({
                 ...state, 
                 education: {

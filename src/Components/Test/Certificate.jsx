@@ -14,14 +14,15 @@ export default function Certificate() {
         id="q7" 
         name="q7" 
         className="form-control mrgn-bttm-md"
+        value={test.certificate}
         onChange={e => setTest(state => ({
             ...state, 
             certificate: e.target.value
           }
         ))}>
         <option value="badvalue" label="Select...">Select...</option>
-        <option selected={test.certificate === "A"} value="A">No</option>
-        <option selected={test.certificate === "B"} value="B">Yes</option>
+        <option value="A">No</option>
+        <option value="B">Yes</option>
       </select>
     </div>
   );
